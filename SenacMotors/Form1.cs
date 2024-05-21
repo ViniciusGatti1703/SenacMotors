@@ -22,6 +22,13 @@ namespace SenacMotors
             veiculo.NroPortas = Convert.ToInt32(Interaction.InputBox("Digite o número de portas"));
             veiculo.Automatico = Convert.ToBoolean(Interaction.InputBox("Digite true para automático, false para não"));
             lblAviso.Text = $"Carro {veiculo.Marca} {veiculo.Modelo} criado com sucesso!!!";
+
+            btnAcelerar.Enabled = true;
+            btnFreiar.Enabled = true;
+            btnSobeMarcha.Enabled = true;
+            btnDesceMarcha.Enabled = true;
+            btnVirarEsquerda.Enabled = true;
+            btnVirarDireita.Enabled = true;
         }
 
         private void btnAcelerar_Click(object sender, EventArgs e)
@@ -81,6 +88,13 @@ namespace SenacMotors
             veiculo.Ano = Convert.ToInt32(Interaction.InputBox("Digite o Ano"));
             veiculo.Automatico = Convert.ToBoolean(Interaction.InputBox("Digite true para automático, false para não"));
             lblAviso.Text = $"Moto {veiculo.Marca} {veiculo.Modelo} criado com sucesso!!!";
+
+            btnAcelerar.Enabled = true;
+            btnFreiar.Enabled = true;
+            btnSobeMarcha.Enabled = true;
+            btnDesceMarcha.Enabled = true;
+            btnVirarEsquerda.Enabled = true;
+            btnVirarDireita.Enabled = true;
 
         }
     }

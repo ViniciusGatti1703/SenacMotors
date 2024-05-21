@@ -55,6 +55,7 @@
             // 
             // btnAcelerar
             // 
+            btnAcelerar.Enabled = false;
             btnAcelerar.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold);
             btnAcelerar.Location = new Point(186, 41);
             btnAcelerar.Name = "btnAcelerar";
@@ -66,6 +67,7 @@
             // 
             // btnFreiar
             // 
+            btnFreiar.Enabled = false;
             btnFreiar.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold);
             btnFreiar.Location = new Point(334, 41);
             btnFreiar.Name = "btnFreiar";
@@ -107,6 +109,7 @@
             // 
             // btnSobeMarcha
             // 
+            btnSobeMarcha.Enabled = false;
             btnSobeMarcha.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold);
             btnSobeMarcha.Location = new Point(500, 41);
             btnSobeMarcha.Name = "btnSobeMarcha";
@@ -118,6 +121,7 @@
             // 
             // btnDesceMarcha
             // 
+            btnDesceMarcha.Enabled = false;
             btnDesceMarcha.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold);
             btnDesceMarcha.Location = new Point(500, 163);
             btnDesceMarcha.Name = "btnDesceMarcha";
@@ -129,6 +133,7 @@
             // 
             // btnVirarDireita
             // 
+            btnVirarDireita.Enabled = false;
             btnVirarDireita.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold);
             btnVirarDireita.Location = new Point(500, 317);
             btnVirarDireita.Name = "btnVirarDireita";
@@ -140,6 +145,7 @@
             // 
             // btnVirarEsquerda
             // 
+            btnVirarEsquerda.Enabled = false;
             btnVirarEsquerda.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold);
             btnVirarEsquerda.Location = new Point(12, 317);
             btnVirarEsquerda.Name = "btnVirarEsquerda";
