@@ -19,7 +19,7 @@ namespace SenacMotors
             return "Empinei a moto";
         }
 
-        public string Direcionar(string direcao)
+        public override string Direcionar(string direcao)
         {
             string guidao = $"Virando o guidão para {direcao}";
 

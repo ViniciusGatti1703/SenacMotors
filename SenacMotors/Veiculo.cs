@@ -9,12 +9,12 @@ namespace SenacMotors
     public class Veiculo
     {
         //propriedades (atributos)
-        public string Marca {  get; set; }
+        public string Marca { get; set; }
         public string Modelo { get; set; }
         public string Cor { get; set; }
         public int Ano { get; set; }
         protected int MarchaAtual { get; set; }
-        public int Velocidade { get; set; }
+        protected int Velocidade { get; set; }
 
         protected bool Ligado { get; set; }
         public bool Automatico { get; set; }
@@ -30,20 +30,22 @@ namespace SenacMotors
         {
             if (Velocidade > 0)
             {
-                Velocidade = - 10;
+                Velocidade = Velocidade - 10;
             }
 
-            
         }
 
-        public int TrocarMarcha(string marcha) 
+
+
+
+        public void TrocarMarcha(string marcha)
         {
             if (marcha == "+")
             {
                 MarchaAtual = MarchaAtual + 1;
             }
 
-            else if (marcha == "-") 
+            else if (marcha == "-")
             {
                 MarchaAtual = MarchaAtual - 1;
             }
@@ -51,12 +53,11 @@ namespace SenacMotors
             {
                 throw new Exception("Marcha Inválida");
             }
-            return MarchaAtual;
         }
 
-        public int TrocarMarcha(bool automatico)
+        public void TrocarMarcha(bool automatico)
         {
-         switch (Velocidade)
+            switch (Velocidade)
             {
                 case 0:
                     MarchaAtual = 0;
@@ -67,7 +68,7 @@ namespace SenacMotors
                 case 20:
                     MarchaAtual = 2;
                     break;
-                    case 30:
+                case 30:
                     MarchaAtual = 3;
                     break;
                 case 40:
@@ -76,14 +77,13 @@ namespace SenacMotors
                 case 50:
                     MarchaAtual = 5;
                     break;
-                    default:
+                default:
                     MarchaAtual = 5;
                     break;
             }
-            return MarchaAtual;
         }
 
-        public string Direcionar(string direcao)
+        public virtual string Direcionar(string direcao)
         {
             string volante = $"Virando o volante para {direcao}";
 
@@ -91,5 +91,14 @@ namespace SenacMotors
 
         }
 
+        public int GetVelocidade()
+        {
+            return Velocidade;
+        }
+
+        public int GetMarcha()
+        {
+            return MarchaAtual;
+        }
     }
 }

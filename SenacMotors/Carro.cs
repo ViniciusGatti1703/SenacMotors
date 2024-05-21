@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SenacMotors
 {
-    public class Carro : Veiculo
+    public class Carro : Veiculo //herança
     {
         public int NroPortas { get; set; }
 
